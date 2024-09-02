@@ -40,7 +40,7 @@ app: FastAPI = FastAPI(
 
 origins = [
     "http://localhost:3000",  # Local frontend address
-    "https://nextjs-fastapi-jade.vercel.app/"  # Deployment frontend address
+    "https://todo-fast-next-neon.vercel.app/"  # Deployment frontend address
 ]
 
 app.add_middleware(
