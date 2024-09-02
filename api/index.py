@@ -38,6 +38,11 @@ app: FastAPI = FastAPI(
     title="Todo App", description="A simple todo app", version="0.1.0"
 )
 
+origins = [
+    "http://localhost:3000",  # Local frontend address
+    "https://nextjs-fastapi-jade.vercel.app/"  # Deployment frontend address
+]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
